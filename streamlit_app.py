@@ -6,7 +6,7 @@ if uploaded_file is not None:
     data = pd.read_csv(uploaded_file)
     st.dataframe(data.head())
 
-template = st.selectbox("Select a templte", ["Headcount Analysis", "Cohort Analysis"])
+template = st.selectbox("Select a template", ["Headcount Analysis", "Cohort Analysis"])
 
 email = st.text_input("Enter your email address")
 
