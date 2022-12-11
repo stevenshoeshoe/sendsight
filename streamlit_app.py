@@ -20,7 +20,7 @@ def generate_streamlit_report(df):
   # top departments
   top_departments = df['department'].value_counts()[:3]
   st.write("Top departments:")
-  st.pie_chart(top_departments)
+  st.bar_chart(top_departments)
 
 if st.button("Create Report"):
     generate_streamlit_report(df)
