@@ -23,7 +23,7 @@ def generate_streamlit_report(df):
   st.pie_chart(top_departments)
 
 if st.button("Create Report"):
-    generate_headcount_report(df)
+    generate_streamlit_report(df)
     st.success("Email sent!")
 
 template = st.selectbox("Select a template", ["Headcount Analysis", "Cohort Analysis"])
