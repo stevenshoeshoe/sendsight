@@ -13,7 +13,7 @@ def generate_streamlit_report(df):
   st.write("Number of employees:", num_employees)
 
   # top locations
-  top_locations = df['location'].value_counts()[:3]
+  top_locations = df['state'].value_counts()[:3]
   st.write("Top locations:")
   st.bar_chart(top_locations)
 
